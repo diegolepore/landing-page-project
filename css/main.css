@@ -1,8 +1,6 @@
-
-/* 
+/************************ 
 * General CSS styles
-*/
-
+*************************/
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +13,6 @@
 body {
   font-family: 'Nunito Sans', sans-serif;
 }
-
 
 /************************ 
 * Header & logo
@@ -90,7 +87,6 @@ body {
   color: #fff;
 }
 
-
 /************************ 
 * Hero Section
 *************************/
@@ -145,7 +141,6 @@ body {
 /************************ 
 * Info Elements Section
 *************************/
-
 .info-elems__titles {
   display: flex;
   flex-direction: column;
@@ -199,4 +194,60 @@ body {
 .info-elems__item-text p {
   font-size: 18px;
   font-weight: lighter;
+}
+
+/************************ 
+* Help Section
+*************************/
+
+.help {
+  background-color: #252F40;
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.help__inner {
+  display: flex;
+}
+
+.help__img,
+.help__right {
+  width: 50%;
+}
+
+.help__img {
+  object-fit: cover;
+}
+
+.help__right {
+  color: #fff;
+  padding: 40px 0 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.help__right h3 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.help__right p {
+  font-size: 25px;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+
+.help__cta {
+  background-color: #fff;
+  color: #252F40;
+  border: 2px solid #fff;
+  transition: all 0.3s;
+}
+
+.help__cta:hover {
+  color: #fff;
+  background-color: #252F40;
 }
