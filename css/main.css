@@ -64,7 +64,7 @@ body {
 * Section
 *************************/
 .section {
-  padding: 0 30px;
+  padding: 60px;
 }
 
 .section__inner {
@@ -94,7 +94,6 @@ body {
 /************************ 
 * Hero Section
 *************************/
-
 .hero {
   width: 100%;
   height: 600px;
@@ -141,4 +140,63 @@ body {
   width: 100%;
   max-width: 700px;
   margin-bottom: 40px;
+}
+
+/************************ 
+* Info Elements Section
+*************************/
+
+.info-elems__titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.info-elems__item-icon {
+  width: 40px;
+  height: 40px;
+  background: url(../img/icon-www.png) no-repeat center;
+  background-size: contain;
+  flex-shrink: 0;
+}
+
+.info-elems__main-heading {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.info-elems__main-text {
+  font-size: 18px;
+  font-weight: lighter;
+  font-style: italic;
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+.info-elems__features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.info-elems__item {
+  display: flex;
+}
+
+.info-elems__item-icon {
+  margin-right: 20px;
+}
+
+.info-elems__item-text h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.info-elems__item-text p {
+  font-size: 18px;
+  font-weight: lighter;
 }
