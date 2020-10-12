@@ -1,0 +1,73 @@
+
+/* 
+* General CSS styles
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+/************************ 
+* Header & logo
+*************************/
+.header {
+  width: 100%;
+  background-color: #1B9CFC;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.header__logo {
+  width: 64px;
+}
+
+.logo-svg {
+  width: 100%;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/************************ 
+* Navegation
+*************************/
+.nav-bar__list {
+  display: flex;
+}
+
+.nav-bar__list-item a {
+  display: block;
+  padding: 23px;
+  color: #fff;
+  font-size: 18px;
+  transition: opacity 0.3s;
+}
+
+.nav-bar__list-item a:hover {
+  opacity: 0.6;
+}
+
+/************************ 
+* Sections
+*************************/
+.section {
+  padding: 0 30px;
+}
+.header__inner,
+.section__inner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
