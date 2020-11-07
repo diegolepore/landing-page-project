@@ -67,6 +67,10 @@ body {
   background-color: #1B9CFC;
   color: #fff;
   padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
 .header__logo {
@@ -401,6 +405,11 @@ body {
 .footer__menu-item a {
   color: #252F40;
   font-size: 18px;
+  transition: opacity 0.3s;
+}
+
+.footer__menu-item a:hover {
+  opacity: 0.6;
 }
 
 .footer__menu-item:not(:last-of-type) {
@@ -416,6 +425,14 @@ body {
 .footer__social-list-item a {
   color: #252F40;
   font-size: 25px;
+}
+
+.footer__social-list-item:hover {
+  transition: opacity 0.3s;
+}
+
+.footer__social-list-item:hover {
+  opacity: 0.6;
 }
 
 .footer__social-list-item:not(:last-of-type) {
