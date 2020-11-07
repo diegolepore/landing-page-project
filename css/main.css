@@ -15,13 +15,54 @@ body {
 }
 
 /************************ 
+* Font icons
+*************************/
+@font-face {
+  font-display: block;
+  font-family: 'icons';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../icons/icons.woff') format('woff');
+}
+
+.icon--facebook:before {
+  font-family: 'icons';
+  content: "\ea91";
+  display: block;
+}
+
+.icon--instagram:before {
+  font-family: 'icons';
+  content: "\ea92";
+  display: block;
+}
+
+.icon--twitter:before {
+  font-family: 'icons';
+  content: "\ea96";
+  display: block;
+}
+
+.icon--youtube:before {
+  font-family: 'icons';
+  content: "\ea9d";
+  display: block;
+}
+
+.icon--linkedin:before {
+  font-family: 'icons';
+  content: "\eac9";
+  display: block;
+}
+
+/************************ 
 * Header & logo
 *************************/
 .header {
   width: 100%;
   background-color: #1B9CFC;
   color: #fff;
-  padding: 15px 30px;
+  padding: 15px;
 }
 
 .header__logo {
@@ -36,6 +77,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    width: 45px;
+  }
 }
 
 /************************ 
@@ -57,6 +104,13 @@ body {
   opacity: 0.6;
 }
 
+@media screen and (max-width: 768px) {
+  .nav-bar__list-item a {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
 /************************ 
 * Section
 *************************/
@@ -68,6 +122,12 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 35px;
+  }
 }
 
 /************************ 
@@ -138,6 +198,18 @@ body {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 768px) {
+  .hero__main-heading {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  .hero__main-text {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+}
+
 /************************ 
 * Info Elements Section
 *************************/
@@ -196,6 +268,32 @@ body {
   font-weight: lighter;
 }
 
+@media screen and (max-width: 768px) {
+  .info-elems__features {
+    display: block;
+  }
+
+  .info-elems__item {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .info-elems__item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-elems__item-icon {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .info-elems__item-text {
+    text-align: center;
+  }
+}
+
 /************************ 
 * Help Section
 *************************/
@@ -250,4 +348,70 @@ body {
 .help__cta:hover {
   color: #fff;
   background-color: #252F40;
+}
+
+@media screen and (max-width: 768px) {
+  .help {
+    padding: 0;
+  }
+
+  .help__inner {
+    display: block;
+  }
+
+  .help__img,
+  .help__right {
+    width: 100%;
+  }
+
+  .help__right {
+    padding: 40px;
+    align-items: center;
+  }
+
+  .help__right h3 {
+    font-size: 35px;
+  }
+
+  .help__right p {
+    text-align: center;
+  }
+}
+
+/************************ 
+* Footer Section
+*************************/
+
+.footer__nav {
+  margin-bottom: 30px;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+} 
+
+.footer__menu-item a {
+  color: #252F40;
+  font-size: 18px;
+}
+
+.footer__menu-item:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__social-list-item a {
+  color: #252F40;
+  font-size: 25px;
+}
+
+.footer__social-list-item:not(:last-of-type) {
+  margin-right: 20px;
 }
