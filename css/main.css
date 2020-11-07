@@ -10,6 +10,10 @@
   border: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Nunito Sans', sans-serif;
 }
@@ -140,6 +144,11 @@ body {
   border-radius: 50px;
   font-size: 20px;
   font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.7;
 }
 
 .btn--pink {
@@ -367,14 +376,11 @@ body {
   .help__right {
     padding: 40px;
     align-items: center;
+    text-align: center;
   }
 
   .help__right h3 {
     font-size: 35px;
-  }
-
-  .help__right p {
-    text-align: center;
   }
 }
 
